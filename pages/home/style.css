@@ -1,0 +1,51 @@
+.con-container{
+    width: 100%;
+    background: #f8f8f8;
+}
+.container-body{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: flex;
+    position: relative;
+}
+.con-menu{
+    width: 350px;
+    height: 509px;
+    background: white;
+}
+.con-slider{
+    width: 100%;
+    background: #f8f8f8cf;
+}
+.con-siler-right{
+    width: 370px;
+    height: 509px;
+}
+.con-siler-right img{
+    height: 510px;
+}
+.con-post{
+    padding: 10px 15px;
+    width: 100%;
+    background: #ffffff;
+    margin: 12px 0px;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

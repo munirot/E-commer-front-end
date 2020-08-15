@@ -1,0 +1,42 @@
+a{
+    text-decoration: none;
+}
+.con-header{
+    width: 100%;
+}
+.main-body{
+    width: 100%;
+}
+.con-footer{
+    padding: 10px;
+    height: 200px;
+    background: #e8e8e8;
+}
+.con-copy-right{
+    width: 100%;
+    background: #47494e;
+    padding: 8px 0px;
+}
+.list-footer-copy-right{
+    display: flex;
+    margin: 0;
+    list-style: none;
+    line-height: 24px;
+    font-size: 12px;
+}
+.container{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: flex;
+    position: relative;
+}
+.list-footer-copy-right li{
+    margin-right: 10px;
+    color: #999;
+}
+.list-footer-copy-right li p:hover{
+    text-decoration: underline;
+}

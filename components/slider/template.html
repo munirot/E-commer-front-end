@@ -1,0 +1,30 @@
+<div>
+    <div class="contain-swiper">
+        <div class="con-slider">
+            <img src="~/assets/image/b1.webp" alt="" width="100%">
+            <!-- <swiper :options="swiperOption" >
+                <div class="swiper-slide" >
+                  <swiper-slide v-for="(queryimg, index) in 5">
+                    <img src="~/assets/image/b1.webp" alt="" width="100%">
+                  </swiper-slide>
+                </div>
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper> -->
+        </div>
+
+        <div class="con-slider-list">
+            <div class="con-list-item" v-for="(datas,index) in listProduct">
+                <div class="box-list">
+                    <img :src="datas.img" alt="" width="100%">
+                    <div class="name-product">
+                        <span>{{datas.price}}</span>
+                    </div>
+                    <p class="text-price">
+                        {{datas.name}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

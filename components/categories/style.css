@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: "Helvetica", sans-serif;
+  color: #333333;
+}
+.list-box{
+  background: #f2f2f2;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.see-all{
+  font-size: 12px;
+  margin-left: 10px;
+  color: gray;
+}
+.list-box-item{
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff;
+}
+.list-box-item:hover{
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  border-color: transparent;
+  box-shadow: 0 1px 10px rgba(0,0,0,.12);
+}
+.list-categories{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.see-all:hover {
+  color: brown;
+}
+.categories-hover-list{
+  display: none;
+  position: absolute;
+  width: 82%;
+  height: 510px;
+  background: lightblue;
+  top: 0px;
+  right: 0px;
+  z-index: 9;
+  border-color: transparent;
+  background-color: #fff;
+}
+.list-box-item:hover .categories-hover-list{
+  display: block;
+  box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+.list-footer{
+  margin: 0;
+  list-style: none;
+  line-height: 24px;
+  font-size: 12px;
+}
+.list-footer li a{
+    color: #999;
+}
+.list-footer a:hover{
+    cursor: pointer;
+    color: brown;
+}
+.list-footer li{
+    margin-right: 10px;
+}
+.con-list{
+  width: 25%;
+  padding: 12px 22px;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  width: 234px;
+}
+.image-list-categories{
+  width: 25%;
+  height: 510px;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+.box-list-product{
+  display: flex;
+  height: 60px;
+  border: 1px solid #e9e9e9;
+  text-align: right;
+  margin-right: 20px;
+}
+.box-list-product P{
+  padding: 10px;
+  text-align: left;
+}
+.box-list-product P:hover{
+  color: brown;
+}
+.box-list-product img{
+  display: inline-block;
+  margin: -10px 5px 0 0;
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+  right: 0px;
+}
+.con-box-image{
+  width: 75%;
+  display: flex;
+  bottom: 20px;
+  position: absolute;
+  justify-content: space-evenly;
+}
+.list-left{
+  display: contents;
+  align-items: center;
+  justify-content: center;
+}
+.list-left img{
+  border: 2px solid #cbcbcb;
+  margin: 5px;
+  width: 45%;
+  padding: 0px 10px;
+}
+.list-left img:hover{
+  border: 2px solid red;
+}
+.grid {
+  width: 75%;
+  padding: 10px;
+  max-width: 900px;
+  height: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.item {
+  width: 31%;
+  margin: 5px;
+  height: auto;
+}

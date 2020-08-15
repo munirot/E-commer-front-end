@@ -1,0 +1,15 @@
+<div>
+    <div class="text-promotion">
+        <img src="../../assets/image/PROMOTION.svg" alt="" width="28px">
+        <p>Promotions</p>
+    </div>
+    <div class="con-slider-list">
+        <div class="con-list-item" v-for="(datas,index) in listProduct">
+            <div class="box-list">
+                <img :src="datas.img" alt="" width="100%">
+                <p class="text-price">USD {{datas.price}} </p>
+                <p class="text-old">USD {{datas.oldPrice}}</p>
+            </div>
+        </div>
+    </div>
+</div>
