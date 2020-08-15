@@ -1,66 +1,78 @@
 <div>
-    <div class="con-best-seller">
-        <di class="con-left">
-            <div class="con-list-datas">
-                <div class="text-promotion">
-                    <img src="../../assets/icon/best.svg" alt="" width="32px">
-                    <p>Top Selection</p>
-                </div>
-                <div class="con-list-item" v-for="(datas,index) in listProduct">
-                    <div class="box-list">
-                        <img :src="datas.img" alt="" width="100%">
-                        <p class="text-price">USD {{datas.price}} </p>
-                        <div class="name-product">
-                            <span>{{datas.sold}}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </di>
-        <div class="con-right">
-            <div class="con-list-datas">
-                <div class="text-promotion">
-                    <img src="../../assets/icon/delivery 1.svg" alt="" width="32px">
-                    <p>New Arrivals</p>
-                </div>
-                <div class="con-list-item" v-for="(datas,index) in listProduct">
-                    <div class="box-list">
-                        <img :src="datas.img" alt="" width="100%">
-                        <p class="text-price"> {{datas.name}} </p>
-                        <p class="name-product">USD {{datas.price}}</p>
-                    </div>
-                </div>
-            </div>
+  <div class="con-best-seller">
+    <div class="con-left">
+      <div class="con-list-datas">
+        <div class="text-promotion">
+          <img src="../../assets/icon/best.svg" alt="" width="32px" />
+          <p>Top Selection</p>
         </div>
-    </div>
-    <div class="con-best-seller">
-        <di class="con-left">
-            <div class="con-list-datas">
-                <div class="text-promotion">
-                    <img src="../../assets/icon/best.svg" alt="" width="32px">
-                    <p>Best Seller</p>
-                </div>
-                <div class="con-list-item" v-for="(datas,index) in listProduct">
-                    <div class="box-list">
-                        <img :src="datas.img" alt="" width="100%">
-                        <p class="name-product">USD {{datas.price}}</p>
-                    </div>
-                </div>
+        <div class="con-list-item" v-for="(datas,index) in listProduct">
+          <nuxt-link to="/detailProduct">
+            <div class="box-list">
+              <img :src="datas.img" alt="" width="100%" />
+              <p class="text-price">USD {{datas.price}}</p>
+              <div class="name-product">
+                <span>{{datas.sold}}</span>
+              </div>
             </div>
-        </di>
-        <div class="con-right">
-            <div class="con-list-datas">
-                <div class="text-promotion">
-                    <img src="../../assets/icon/valentine_013-hearts-love-affection-like.svg" alt="" width="32px">
-                    <p>May You Like</p>
-                </div>
-                <div class="con-list-item" v-for="(datas,index) in listProduct">
-                    <div class="box-list">
-                        <img :src="datas.img" alt="" width="100%">
-                        <p class="name-product">USD {{datas.price}}</p>
-                    </div>
-                </div>
-            </div>
+          </nuxt-link>
         </div>
+      </div>
     </div>
+    <div class="con-right">
+      <div class="con-list-datas">
+        <div class="text-promotion">
+          <img src="../../assets/icon/delivery 1.svg" alt="" width="32px" />
+          <p>New Arrivals</p>
+        </div>
+        <div class="con-list-item" v-for="(datas,index) in listProduct">
+          <nuxt-link to="/detailProduct">
+            <div class="box-list">
+              <img :src="datas.img" alt="" width="100%" />
+              <p class="text-price">{{datas.name}}</p>
+              <p class="name-product">USD {{datas.price}}</p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="con-best-seller">
+    <div class="con-left">
+      <div class="con-list-datas">
+        <div class="text-promotion">
+          <img src="../../assets/icon/best.svg" alt="" width="32px" />
+          <p>Best Seller</p>
+        </div>
+        <div class="con-list-item" v-for="(datas,index) in listProduct">
+          <nuxt-link to="/detailProduct">
+            <div class="box-list">
+              <img :src="datas.img" alt="" width="100%" />
+              <p class="name-product">USD {{datas.price}}</p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
+    <div class="con-right">
+      <div class="con-list-datas">
+        <div class="text-promotion">
+          <img
+            src="../../assets/icon/valentine_013-hearts-love-affection-like.svg"
+            alt=""
+            width="32px"
+          />
+          <p>May You Like</p>
+        </div>
+        <div class="con-list-item" v-for="(datas,index) in listProduct">
+          <nuxt-link to="/detailProduct">
+            <div class="box-list">
+              <img :src="datas.img" alt="" width="100%" />
+              <p class="name-product">USD {{datas.price}}</p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

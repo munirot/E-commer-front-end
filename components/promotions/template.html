@@ -5,11 +5,13 @@
     </div>
     <div class="con-slider-list">
         <div class="con-list-item" v-for="(datas,index) in listProduct">
+            <nuxt-link to="/detailProduct">
             <div class="box-list">
                 <img :src="datas.img" alt="" width="100%">
                 <p class="text-price">USD {{datas.price}} </p>
                 <p class="text-old">USD {{datas.oldPrice}}</p>
             </div>
+        </nuxt-link>
         </div>
     </div>
 </div>

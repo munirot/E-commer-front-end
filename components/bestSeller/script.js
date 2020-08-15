@@ -1,5 +1,5 @@
 export default {
-  name: 'detailProduct',
+  name: 'BestSeller',
   data() {
     return {
       listProduct:[

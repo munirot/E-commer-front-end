@@ -1,5 +1,5 @@
 export default {
-  name: 'detailProduct',
+  name: 'Promotion',
   data() {
     return {
       listProduct:[

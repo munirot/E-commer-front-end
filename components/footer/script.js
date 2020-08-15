@@ -1,5 +1,5 @@
 export default {
-  name: 'detailProduct',
+  name: 'Footer',
   data() {
     return {
 

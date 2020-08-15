@@ -5,7 +5,7 @@ import Contact from '../../components/contact/index.vue'
 import BestSeller from '../../components/bestSeller/index.vue'
 
 export default {
-  name: 'home',
+  name: 'PageHome',
   data() {
     return {
 
