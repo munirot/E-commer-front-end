@@ -7,7 +7,7 @@ export default {
           name:"PS63",
           price:"$90.89",
           oldPrice:"$129.59",
-          img: require("../../assets/image/p4.webp"),
+          img: require("../../assets/image/ch1.png"),
         },
         {
           name:"ST-Pro",
