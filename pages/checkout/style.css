@@ -12,7 +12,7 @@
 
 .clearfix:before,
 .clearfix:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 
@@ -83,21 +83,21 @@ label {
   color: #999;
 }
 
-#content3{
-    padding: 16px !important;
+#content3 {
+  padding: 16px !important;
 }
 
 .tab_container .tab-content h3 {
   text-align: center;
 }
 
-.tab_container [id^='tab']:checked + label {
+.tab_container [id^="tab"]:checked + label {
   background: #fff;
   border-bottom: 2px solid #358ed7;
   color: #358ed7;
 }
 
-.tab_container [id^='tab']:checked + label > span.numberCircle {
+.tab_container [id^="tab"]:checked + label > span.numberCircle {
   border: 2px solid #358ed7;
   border-radius: 50%;
   width: 30px;
@@ -218,13 +218,13 @@ label:hover {
   font-size: 11pt;
   color: #5e6977;
 }
-input[type='text'] {
+input[type="text"] {
   display: initial;
   padding: 15px;
 }
 .text-validated {
   border-color: #7dc855;
-  background-image: url('https://www.dropbox.com/s/1mve74fafiwsae1/icon-tick.png?raw=1');
+  background-image: url("https://www.dropbox.com/s/1mve74fafiwsae1/icon-tick.png?raw=1");
   background-repeat: no-repeat;
   background-position: right 18px center;
 }
@@ -271,7 +271,7 @@ a:hover {
   color: #7dc855;
   font-weight: 500;
   font-size: 12pt;
-  background-image: url('https://www.dropbox.com/s/10d95otbo48r0hh/icon-next.png?raw=1');
+  background-image: url("https://www.dropbox.com/s/10d95otbo48r0hh/icon-next.png?raw=1");
   background-repeat: no-repeat;
   background-position: right 50px center;
 }
@@ -280,12 +280,12 @@ a:hover {
   vertical-align: middle;
   padding-left: 17px;
 }
-input[id^='radio'] {
+input[id^="radio"] {
   display: none;
 }
 
-input[id^='radio'] + label {
-  background-image: url('https://www.dropbox.com/s/mnwbybfl4pnzoi4/radio-inactive.png?raw=1');
+input[id^="radio"] + label {
+  background-image: url("https://www.dropbox.com/s/mnwbybfl4pnzoi4/radio-inactive.png?raw=1");
   height: 26px;
   width: 24px;
   display: inline-block;
@@ -294,8 +294,8 @@ input[id^='radio'] + label {
   border-radius: 50%;
 }
 
-input[id^='radio']:checked + label {
-  background-image: url('https://www.dropbox.com/s/8634yi8i1s7fx7w/radio-active.png?raw=1');
+input[id^="radio"]:checked + label {
+  background-image: url("https://www.dropbox.com/s/8634yi8i1s7fx7w/radio-active.png?raw=1");
   height: 26px;
   width: 24px;
   display: inline-block;
@@ -334,7 +334,7 @@ p.credit {
 }
 
 .clearfix:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -346,77 +346,161 @@ ul li a {
 
 /* shipping information */
 hr {
-    height: 1px;
-    width: 100%;
-    background-color: #e3e5ed;
-    border: 0;
-    margin: 1rem 0;
-  }
+  height: 1px;
+  width: 100%;
+  background-color: #e3e5ed;
+  border: 0;
+  margin: 1rem 0;
+}
 
 .form {
-    display: grid;
-    grid-gap: 1rem;
-  }
-  
-  .field {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #e3e5ed;
-    padding: .5rem;
-    border-radius: .25rem;
-  }
-  
-  .field__label {
-    color: #737888;
-    font-size: 0.6rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: 0.25rem
-  }
-  
-  .field__input {
-    padding: 0 !important;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    font-weight: bold;
-    font-size: 1rem;
-    width: 100%;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: transparent;
-  }
-  .field:focus-within {
-    border-color: #000;
-  }
-  
-  .fields {
-    display: grid;
-    grid-gap: 1rem;
-  }
-  .fields--2 {
-    grid-template-columns: 1fr 1fr;
-  }
-  .fields--3 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .button {
-    background-color: #000;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: block;
-    color: #fff;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 0.25rem;
-    border: 0;
-    cursor: pointer;
-    outline: 0;
-  }
-  .button:focus-visible {
-    background-color: #333;
-  }
-  /* end shipping information */
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e3e5ed;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: rgb(230, 247, 247);
+}
+
+.field__label {
+  color: #737888;
+  font-size: 0.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.field__input {
+  padding: 0 !important;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+.field:focus-within {
+  border-color: #000;
+  border-radius: 0.25rem;
+}
+
+.fields {
+  display: grid;
+  grid-gap: 1rem;
+}
+.fields--2 {
+  grid-template-columns: 1fr 1fr;
+}
+.fields--3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button {
+  background-color: #000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+}
+.button:focus-visible {
+  background-color: #333;
+}
+/* end shipping information */
+
+/* customer information */
+.cus_info{
+  margin: 10px;
+}
+
+.FN{
+  width: 100% ;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(230, 247, 247);
+}
+.FN:hover{
+  background-color: rgb(231, 230, 230);
+}
+
+.LN{
+  width: 100% ;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(230, 247, 247);
+}
+.LN:hover{
+  background-color: rgb(231, 230, 230);
+}
+
+.email{
+  width: 100% ;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(230, 247, 247);
+}
+.email:hover{
+  background-color: rgb(231, 230, 230);
+}
+
+.address{
+  width: 100% ;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(230, 247, 247);
+}
+.address:hover{
+  background-color: rgb(231, 230, 230);
+}
+
+.city{
+  width: 100% ;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(230, 247, 247);
+}
+.city:hover{
+  background-color: rgb(231, 230, 230);
+}
+
+.country{
+  width: 49% ;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(230, 247, 247);
+}
+.country:hover{
+  background-color: rgb(231, 230, 230);
+}
+
+.zip{
+  width: 49% ;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(230, 247, 247);
+}
+.zip:hover{
+  background-color: rgb(231, 230, 230);
+}

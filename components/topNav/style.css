@@ -155,6 +155,7 @@ a {
 .con-text-card {
   margin-left: 10px;
   text-align: center;
+  
 }
 .con-box-option:hover {
   color: brown;
@@ -385,7 +386,7 @@ ul li a {
   clear: both;
 }
 
-
 .cart:hover .container-cart{
   display: block;
 }
+
