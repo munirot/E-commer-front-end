@@ -1,4 +1,5 @@
 # ecommerce
+E-commerce front-end assignment project for ITE403 class
 
 # Get Project
   1. Git clone
