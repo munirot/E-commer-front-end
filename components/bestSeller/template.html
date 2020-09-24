@@ -25,11 +25,11 @@
           <img src="../../assets/icon/delivery 1.svg" alt="" width="32px" />
           <p>New Arrivals</p>
         </div>
-        <div class="con-list-item" v-for="(datas,index) in listProduct">
+        <div class="con-list-item" v-for="(datas,index) in listImage1">
           <nuxt-link to="/detailProduct">
-            <div class="box-list">
+            <div class="box-list" style="margin-top: 22px;">
               <img :src="datas.img" alt="" width="100%" />
-              <p class="text-price">{{datas.name}}</p>
+             <p class="text-price">{{datas.name}}</p>
               <p class="name-product">USD {{datas.price}}</p>
             </div>
           </nuxt-link>
@@ -44,7 +44,7 @@
           <img src="../../assets/icon/best.svg" alt="" width="32px" />
           <p>Best Seller</p>
         </div>
-        <div class="con-list-item" v-for="(datas,index) in listProduct">
+        <div class="con-list-item" v-for="(datas,index) in listImage2">
           <nuxt-link to="/detailProduct">
             <div class="box-list">
               <img :src="datas.img" alt="" width="100%" />
@@ -64,7 +64,7 @@
           />
           <p>May You Like</p>
         </div>
-        <div class="con-list-item" v-for="(datas,index) in listProduct">
+        <div class="con-list-item" v-for="(datas,index) in listImage3">
           <nuxt-link to="/detailProduct">
             <div class="box-list">
               <img :src="datas.img" alt="" width="100%" />
