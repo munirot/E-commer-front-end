@@ -1,20 +1,20 @@
+import footerPage from '../../components/contact/index.vue'
 
 export default {
-  name: 'PageCheckout',
+  name: 'CategoryPage',
   data() {
     return {
-      success: false,
+
     }
   },
   components: {
+    footerPage
   },
   created() {
 
   },
   methods: {
-    finish(){
-      this.success = true
-    }
+    
   }
   }
 

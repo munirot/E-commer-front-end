@@ -504,3 +504,25 @@ hr {
 .zip:hover{
   background-color: rgb(231, 230, 230);
 }
+
+/* success */
+i {
+  color: #9ABC66;
+  font-size: 100px;
+  line-height: 200px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-65%);
+}
+
+.card {
+  background: white;
+  padding: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px #C8D0D8;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+}

@@ -1,5 +1,5 @@
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .con-header{
     width: 100%;
@@ -39,4 +39,7 @@ a{
 }
 .list-footer-copy-right li p:hover{
     text-decoration: underline;
+}
+p{
+    margin: 0 !important;
 }

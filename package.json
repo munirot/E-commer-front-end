@@ -9,8 +9,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
     "nuxt": "^2.14.0",
     "swiper": "^6.1.1",
+    "vue": "^2.6.12",
     "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {}

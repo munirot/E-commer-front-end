@@ -1,7 +1,7 @@
 <div class="con-body-product">
   <div class="container-body">
     <h1>Checkout</h1>
-    <div class="tab_container">
+    <div class="tab_container" v-if="!success">
       <input id="tab1" type="radio" name="tabs" />
       <label for="tab1"
         ><span class="numberCircle">1</span><span>Cart</span></label
@@ -15,7 +15,8 @@
 
       <input id="tab3" type="radio" name="tabs" />
       <label for="tab3">
-      <span class="numberCircle">3</span><span>Shipping</span></label>
+        <span class="numberCircle">3</span><span>Shipping</span></label
+      >
 
       <input id="tab4" type="radio" name="tabs" checked />
       <label for="tab4"
@@ -49,22 +50,24 @@
       <section id="content2" class="tab-content">
         <h3>Customer Information</h3>
         <form class="cus_info">
-          <p style="padding-top: 1em;">Please enter your information details.</p>
-          <hr>
-          First Name<br>
-          <input type="text" class="FN" placeholder="Your First Name">
-          <br><br>
-          Last Name<br>
-          <input type="text" class="LN" placeholder="Your Last Name">
-          <br><br>
-          Email<br>
-          <input type="text" class="email" placeholder="Your Email">
-          <br><br>
-          Address<br>
-          <input type="text" class="address" placeholder="Street">
-          <input type="text" class="city" placeholder="City">
-          <input type="text" class="country" placeholder="Country">&nbsp;
-          <input type="text" class="zip" placeholder="Zip">
+          <p style="padding-top: 1em;">
+            Please enter your information details.
+          </p>
+          <hr />
+          First Name<br />
+          <input type="text" class="FN" placeholder="Your First Name" />
+          <br /><br />
+          Last Name<br />
+          <input type="text" class="LN" placeholder="Your Last Name" />
+          <br /><br />
+          Email<br />
+          <input type="text" class="email" placeholder="Your Email" />
+          <br /><br />
+          Address<br />
+          <input type="text" class="address" placeholder="Street" />
+          <input type="text" class="city" placeholder="City" />
+          <input type="text" class="country" placeholder="Country" />&nbsp;
+          <input type="text" class="zip" placeholder="Zip" />
         </form>
       </section>
 
@@ -276,11 +279,24 @@
               <a href="#">Return to Shipping</a>
             </div>
             <div class="button-container button-finish">
-              <a href="#">Finish Order</a>
+              <p @click="finish">Finish Order</p>
             </div>
           </div>
         </form>
       </section>
+    </div>
+
+    <div class="card" v-else>
+      <div
+        style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto; position: relative;"
+      >
+        <i class="checkmark">✓</i>
+      </div>
+      <h1>Success</h1>
+      <p style="text-align: center; margin-top: 12px;">
+        We received your purchase request.<br />
+        Please check your email!
+      </p>
     </div>
   </div>
 </div>
