@@ -14,7 +14,6 @@
     "nuxt": "^2.14.0",
     "swiper": "^6.1.1",
     "vue": "^2.6.12",
-    "vue-awesome-swiper": "^4.1.1"
-  },
-  "devDependencies": {}
+    "vue-awesome-swiper": "^5.0.1"
+  }
 }
